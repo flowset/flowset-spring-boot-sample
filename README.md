@@ -41,7 +41,12 @@ This project implements a credit application approval process using Camunda 7. T
 3. **Build and run application**:
 
     ```bash
-    ./gradle bootRun
+    ./gradlew bootRun
+    ```
+
+    Note: If you get a permission denied error, first run:
+    ```bash
+    chmod +x gradlew
     ```
 
 3. **Run OpenBPM Control**
