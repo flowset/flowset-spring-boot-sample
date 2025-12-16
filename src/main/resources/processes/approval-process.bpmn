@@ -5,17 +5,17 @@
       <bpmn:outgoing>Flow_0w0cdae</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="Flow_0w0cdae" sourceRef="StartEvent_1" targetRef="Activity_0bxpzwf" />
-    <bpmn:serviceTask id="Activity_0bxpzwf" name="Filling with random data" camunda:asyncBefore="true" camunda:class="io.openbpm.springbootsample.delegate.FillingDataRandomDelegate">
+    <bpmn:serviceTask id="Activity_0bxpzwf" name="Filling with random data" camunda:asyncBefore="true" camunda:class="io.flowset.springbootsample.delegate.FillingDataRandomDelegate">
       <bpmn:incoming>Flow_0w0cdae</bpmn:incoming>
       <bpmn:outgoing>Flow_0pvokkz</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sequenceFlow id="Flow_0pvokkz" sourceRef="Activity_0bxpzwf" targetRef="Activity_0kbmrmw" />
-    <bpmn:serviceTask id="Activity_0kbmrmw" name="Data Validation" camunda:asyncBefore="true" camunda:class="io.openbpm.springbootsample.delegate.DataValidationDelegate">
+    <bpmn:serviceTask id="Activity_0kbmrmw" name="Data Validation" camunda:asyncBefore="true" camunda:class="io.flowset.springbootsample.delegate.DataValidationDelegate">
       <bpmn:incoming>Flow_0pvokkz</bpmn:incoming>
       <bpmn:outgoing>Flow_0lfnk0q</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sequenceFlow id="Flow_0lfnk0q" sourceRef="Activity_0kbmrmw" targetRef="Activity_00u5iyl" />
-    <bpmn:serviceTask id="Activity_00u5iyl" name="Data verification" camunda:asyncBefore="true" camunda:class="io.openbpm.springbootsample.delegate.DataVerificationDelegate">
+    <bpmn:serviceTask id="Activity_00u5iyl" name="Data verification" camunda:asyncBefore="true" camunda:class="io.flowset.springbootsample.delegate.DataVerificationDelegate">
       <bpmn:incoming>Flow_0lfnk0q</bpmn:incoming>
       <bpmn:outgoing>Flow_0qtttvw</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -28,14 +28,14 @@
     <bpmn:sequenceFlow id="Flow_1o2ch0y" sourceRef="Gateway_15rzdzn" targetRef="Activity_14aqls5">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${creditScore &gt;= 70}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:serviceTask id="Activity_14aqls5" name="Notify about approval" camunda:asyncBefore="true" camunda:class="io.openbpm.springbootsample.delegate.ApprovalNotifyDelegate">
+    <bpmn:serviceTask id="Activity_14aqls5" name="Notify about approval" camunda:asyncBefore="true" camunda:class="io.flowset.springbootsample.delegate.ApprovalNotifyDelegate">
       <bpmn:incoming>Flow_1o2ch0y</bpmn:incoming>
       <bpmn:outgoing>Flow_1hfa8cj</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sequenceFlow id="Flow_0zylre6" sourceRef="Gateway_15rzdzn" targetRef="Activity_0tqyepb">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${creditScore &lt; 70}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:serviceTask id="Activity_0tqyepb" name="Notify about rejection" camunda:asyncBefore="true" camunda:class="io.openbpm.springbootsample.delegate.RefusalNotifyDelegate">
+    <bpmn:serviceTask id="Activity_0tqyepb" name="Notify about rejection" camunda:asyncBefore="true" camunda:class="io.flowset.springbootsample.delegate.RefusalNotifyDelegate">
       <bpmn:incoming>Flow_0zylre6</bpmn:incoming>
       <bpmn:outgoing>Flow_1maqcn7</bpmn:outgoing>
     </bpmn:serviceTask>

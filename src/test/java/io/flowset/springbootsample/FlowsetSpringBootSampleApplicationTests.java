@@ -1,10 +1,10 @@
-package io.openbpm.springbootsample.openbpmspringbootsample;
+package io.flowset.springbootsample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OpenbpmSpringBootSampleApplicationTests {
+class FlowsetSpringBootSampleApplicationTests {
 
     @Test
     void contextLoads() {

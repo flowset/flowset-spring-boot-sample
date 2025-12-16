@@ -1,4 +1,4 @@
-package io.openbpm.springbootsample.utils;
+package io.flowset.springbootsample.utils;
 
 import net.datafaker.Faker;
 import net.datafaker.providers.base.Address;

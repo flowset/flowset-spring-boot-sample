@@ -20,14 +20,14 @@ This project implements a credit application approval process using Camunda 7. T
 ## 🚀 Features
 - **BPMN 2.0 Workflow**: Visual process design using Camunda Modeler.
 - **Automated Credit Scoring**: Integration with mock credit score services.
-- **OpenBPM Control**: Monitor business processes.
+- **Flowset Control**: Monitor business processes.
 
 ---
 
 ## ⚙️ Prerequisites
 - Java 21+
 - Gradle
-- OpenBPM Studio
+- Flowset Studio
 
 ---
 
@@ -35,8 +35,8 @@ This project implements a credit application approval process using Camunda 7. T
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/openbpm-platform/openbpm-spring-boot-sample.git
-   cd openbpm-spring-boot-sample
+   git clone https://github.com/flowset/flowset-spring-boot-sample.git
+   cd flowset-spring-boot-sample
 
 3. **Build and run application**:
 
@@ -44,7 +44,7 @@ This project implements a credit application approval process using Camunda 7. T
     ./gradle bootRun
     ```
 
-3. **Run OpenBPM Control**
+3. **Run Flowset Control**
 
    ```
    cd docker
@@ -55,7 +55,7 @@ This project implements a credit application approval process using Camunda 7. T
 
    Application: http://localhost:8080
 
-   OpenBPM Control: http://localhost:8081
+   Flowset Control: http://localhost:8081
 
    H2 Console: http://localhost:8080/h2-console (JDBC URL: jdbc:h2:mem:camunda)
 
@@ -64,7 +64,7 @@ This project implements a credit application approval process using Camunda 7. T
 Update `src/main/resources/application.properties`:
 
 ```properties
-spring.application.name=openbpm-spring-boot-sample
+spring.application.name=flowset-spring-boot-sample
 
 # H2 Settings
 spring.datasource.url: jdbc:h2:file:./h2/camunda-h2-database
@@ -162,13 +162,13 @@ Next, click the **View** button, a screen will open to view the status of the pr
 
 ![view-process-instance.png](images/view-process-instance.png)
 
-You can find a more detailed description about OpenBPM Control [here](https://github.com/openbpm-platform/openbpm-control/blob/main/README.md).
+You can find a more detailed description about Flowset Control [here](https://github.com/flowset/flowset-control-community/blob/main/README.md).
 
 ---
 
 ## 📊 Monitoring
 
-### OpenBPM Control:
+### Flowset Control:
 
 URL: http://localhost:8081/
 

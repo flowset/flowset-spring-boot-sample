@@ -1,6 +1,6 @@
-package io.openbpm.springbootsample.delegate;
+package io.flowset.springbootsample.delegate;
 
-import io.openbpm.springbootsample.utils.DatafakerUtils;
+import io.flowset.springbootsample.utils.DatafakerUtils;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.openbpm.springbootsample.variable.VariableConstants.*;
+import static io.flowset.springbootsample.variable.VariableConstants.*;
 
 @Component
 public class FillingDataRandomDelegate implements JavaDelegate {

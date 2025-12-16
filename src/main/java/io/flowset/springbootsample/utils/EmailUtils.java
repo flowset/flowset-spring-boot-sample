@@ -1,4 +1,4 @@
-package io.openbpm.springbootsample.utils;
+package io.flowset.springbootsample.utils;
 
 import java.util.regex.Pattern;
 

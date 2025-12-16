@@ -1,4 +1,4 @@
-package io.openbpm.springbootsample.variable;
+package io.flowset.springbootsample.variable;
 
 public class VariableConstants {
 

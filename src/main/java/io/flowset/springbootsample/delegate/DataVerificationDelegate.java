@@ -1,7 +1,7 @@
-package io.openbpm.springbootsample.delegate;
+package io.flowset.springbootsample.delegate;
 
-import io.openbpm.springbootsample.utils.DatafakerUtils;
-import io.openbpm.springbootsample.variable.VariableConstants;
+import io.flowset.springbootsample.utils.DatafakerUtils;
+import io.flowset.springbootsample.variable.VariableConstants;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 
